@@ -1,8 +1,8 @@
 var tape = require('tape')
-var benPager = require('./')
+var BenPager = require('./')
 
 tape('BenPager Tests: Get Page ', function (t) {
-  var benPages = benPager(1024)
+  var benPages = BenPager(1024)
 
   var benPage = benPages.get(0)
 
@@ -12,7 +12,7 @@ tape('BenPager Tests: Get Page ', function (t) {
 })
 
 tape('BenPager Tests: Get Page Twice', function (t) {
-  var benPages = benPager(1024)
+  var benPages = BenPager(1024)
   t.same(benPages.length, 0)
 
   var benPage = benPages.get(0)
@@ -28,7 +28,7 @@ tape('BenPager Tests: Get Page Twice', function (t) {
 })
 
 tape('BenPager Tests: Get Immutable Page', function (t) {
-  var benPages = benPager(1024)
+  var benPages = BenPager(1024)
 
   t.ok(!benPages.get(141, true))
   t.ok(benPages.get(141))
@@ -38,7 +38,7 @@ tape('BenPager Tests: Get Immutable Page', function (t) {
 })
 
 tape('BenPager Tests: Get Far Out Page', function (t) {
-  var benPages = benPager(1024)
+  var benPages = BenPager(1024)
 
   var benPage = benPages.get(1000000)
 
@@ -57,7 +57,7 @@ tape('BenPager Tests: Get Far Out Page', function (t) {
 })
 
 tape('BenPager Tests: Get Updates', function (t) {
-  var benPages = benPager(1024)
+  var benPages = BenPager(1024)
 
   t.same(benPages.lastUpdate(), null)
 
