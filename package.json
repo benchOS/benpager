@@ -1,0 +1,17 @@
+{
+  "name": "@benos/benpager",
+  "version": "0.1.1",
+  "description": "benOS Utility For Accessing Memory Through Buffers.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "standard": "^9.0.0",
+    "tape": "^4.6.3"
+  },
+  "scripts": {
+    "test": "standard && tape test.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
