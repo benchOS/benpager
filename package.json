@@ -1,6 +1,6 @@
 {
   "name": "@benos/benpager",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "benOS Utility For Accessing Memory Through Buffers.",
   "main": "index.js",
   "dependencies": {},
